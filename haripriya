@@ -1,0 +1,70 @@
+#include<stdio.h>
+{
+struct software application
+char name[25];
+char author[25];
+char version[25];
+int year;
+float price;
+};
+int comparator for price(const void *p,const void *q)
+{
+return strcmp(((struct software application *)p)->price,((struct software application *)q)->name;)
+}
+int comparator for author(const void *p,const void *q)
+{
+return strcmp(((struct software application *)p)->author,((struct software application *)q)->name;)
+}
+int comparator for year(const void *p,const void *q)
+{
+return strcmp(((struct software application *)p)->year,((struct software application *)q)->name;)
+void main()
+{
+char authoname[25];
+int year;
+struct software application details[5];
+//getting i/p
+for(i=1;i<=5;i++)
+{
+printf("enter deyails for application %d",i);
+gets(details[i].name);
+gets(details[i].author);
+gets(details[i].version);
+scanf("%d",&details[i].year);
+scanf("%f",&details[i].price);
+}
+//getting by author name
+printf("\n enter author name");
+scanf("%s",author name);
+for(i=1;i<5;i++)
+{
+if((strcmp(authorname,details[i].author))=0
+{
+printf("%s",details[i].name);
+printf("%s",details[i].author);
+printf("%s",details[i].version);
+printf("%d",details[i].year);
+printf("%f",details[i].price);
+}
+}
+//getting by given year
+printf("\n enter year");
+scanf("%d",year);
+for(i=1;i<5;i++)
+{
+if(year=details[i] year)
+{
+printf("%s",details[i].name);
+printf("%s",details[i].author);
+printf("%s",details[i].version);
+printf("%d",details[i].year);
+printf("%f",details[i].price);
+}
+}
+//sorting based on price
+q sort(details,5,sizeof(struct software application),comparators for price);
+}
+//sorting year
+qsort(details,5,sizeof(struct software application),comparators for year);
+}
+
